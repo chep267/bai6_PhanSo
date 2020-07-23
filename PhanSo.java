@@ -63,7 +63,7 @@ public class PhanSo implements toan{
     }
 
     //Nhap tu file:
-    public void input(String fileName) throws IOException {
+    public void inputDataOnFile(String fileName) throws IOException {
         InputStream fis = new FileInputStream(fileName);
         DataInputStream dis = new DataInputStream(fis);
 

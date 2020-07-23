@@ -16,7 +16,7 @@ public class Demo {
 
 
         PhanSo p3 = new PhanSo();
-        p3.input("/home/dongnt/Dong_Projects/dongcode/src/dongcode/bai6/input.txt");
+        p3.inputDataOnFile("/home/dongnt/Dong_Projects/dongcode/src/dongcode/bai6/input.txt");
         System.out.print("\nPS 3 la: "+ p3.toString());
 
 
