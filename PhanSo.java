@@ -2,13 +2,14 @@ package dongcode.bai6;
 
 import java.io.*;
 
-public class PhanSo {
+
+public class PhanSo implements toan{
 
     int ts, ms; // tu so va mau so
 
     //toi gian phan so:
     private void toigianPS() {
-        int a = UCLN(ts,ms);
+        int a = ucln(ts,ms);
         ts = ts/a;
         ms = ms/a;
         if(ms<0){
@@ -17,32 +18,14 @@ public class PhanSo {
         }
     }
 
-    //tim ucln:
-    public int UCLN(int a, int b) {
-        if (b == 0) return a;
-        return UCLN(b, a%b);
-    }
-
-    //Tim bcnn:
-    public int BCNN(int a, int b) {
-        return (a * b) / UCLN(a,b);
-    }
-
     //ham tao:
     public PhanSo () {
         ts = 1; ms = 1;
     }
 
     public PhanSo (int n, int d) {
-        try {
-            ts = n;
-            ms = d;
-            if (ms == 0) {
-                throw new Exception("loi mau so = 0 !");
-            }
-        } catch(Exception e) {
-        System.out.println(e.getMessage());
-        }
+        ts = n;
+        ms = d;
     }
 
     //Cac phep tinh:

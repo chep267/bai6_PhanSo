@@ -8,7 +8,7 @@ public class Demo {
     public static void main(String arg[]) throws IOException {
 
 
-        PhanSo p1 = new PhanSo(1,2);
+        PhanSo p1 = new PhanSo(1,10);
         PhanSo p2 = new PhanSo(2,-5);
 
         System.out.print("\nPS 1 la: "+ p1.toString());
